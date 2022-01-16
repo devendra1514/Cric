@@ -8,10 +8,11 @@ import retrofit2.http.GET
 import retrofit2.http.Headers
 
 const val BASE_URL = "https://cricket-live-data.p.rapidapi.com/"
+const val API_KEY = ""
 
 interface CricService {
     @Headers("x-rapidapi-host:cricket-live-data.p.rapidapi.com",
-        "x-rapidapi-key:106d4991f4msh7d6be57d1604a85p1b9496jsn4390e32777f8")
+        "x-rapidapi-key:$API_KEY")
     @GET("match/2432999")
     fun getScoreCard(): Call<OutputScoreCard>
 }
