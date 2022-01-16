@@ -1,14 +1,11 @@
 package com.example.cric
 
 import com.example.cric.scorecard.OutputScoreCard
-import com.example.cric.scorecard.Results
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Headers
-import retrofit2.http.Path
-import retrofit2.http.Query
 
 const val BASE_URL = "https://cricket-live-data.p.rapidapi.com/"
 
