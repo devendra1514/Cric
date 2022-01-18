@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/deven/AndroidStudioProjects/Cric/app/src/main/res/drawable/ic_explore.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/Cric/app/src/main/res/drawable/ic_home.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/Cric/app/src/main/res/drawable/ic_memes.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/Cric/app/src/main/res/drawable/ic_news.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/Cric/app/src/main/res/drawable/ic_profile.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/deven/AndroidStudioProjects/Cric/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/Cric/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/deven/AndroidStudioProjects/Cric/app/src/main/res/layout/fragment_score_card.xml" value="0.17552083333333332" />
       </map>
     </option>
   </component>

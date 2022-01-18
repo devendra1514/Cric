@@ -17,27 +17,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        GlobalScope.launch(Dispatchers.IO) {
-            getScoreCard()
-        }
-
-    }
-    private fun getScoreCard(){
-        val data = CricApi.scoreCardInstance.getScoreCard()
-        data.enqueue(object : Callback<OutputScoreCard> {
-            override fun onResponse(
-                call: Call<OutputScoreCard>,
-                response: Response<OutputScoreCard>
-            ) {
-                val outputScoreCard = response.body()
-                if (outputScoreCard != null) {
-                    Log.d("Aao", outputScoreCard.results.fixture.match_title)
-                }
-            }
-
-            override fun onFailure(call: Call<OutputScoreCard>, t: Throwable) {
-                Log.d("Aao", t.message.toString())
-            }
-        })
     }
 }

@@ -1,4 +1,3 @@
 package com.example.cric.scorecard
 
-class LiveDetails {
-}
+class LiveDetails(val match_summary: MatchSummary)
