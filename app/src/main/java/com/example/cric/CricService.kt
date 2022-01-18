@@ -1,6 +1,6 @@
 package com.example.cric
 
-import com.example.cric.scorecard.OutputScoreCard
+import com.example.cric.scorecard_home.OutputScoreCard
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

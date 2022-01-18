@@ -1,3 +1,3 @@
-package com.example.cric.scorecard
+package com.example.cric.scorecard_home
 
 class Results(val fixture: Fixture, live_details: LiveDetails)
