@@ -1,29 +1,30 @@
 package com.example.cric
 
-import com.example.cric.scorecard_home.OutputScoreCard
+import com.example.cric.scorecard_home.ScoreCard
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Headers
+import retrofit2.http.Path
 
 const val BASE_URL = "https://cricket-live-data.p.rapidapi.com/"
 const val API_KEY = "106d4991f4msh7d6be57d1604a85p1b9496jsn4390e32777f8"
 
-interface CricService {
+interface ScoreCardService {
     @Headers("x-rapidapi-host:cricket-live-data.p.rapidapi.com",
         "x-rapidapi-key:$API_KEY")
-    @GET("match/2432999")
-    fun getScoreCard(): Call<OutputScoreCard>
+    @GET("match/{match_id}")
+    fun getScoreCard(@Path("match_id")match_id: Int): Call<ScoreCard>
 }
 
-object CricApi{
-    val scoreCardInstance: CricService
+object ScoreCardApi{
+    val scoreCardInstance: ScoreCardService
     init {
         val retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-        scoreCardInstance = retrofit.create(CricService::class.java)
+        scoreCardInstance = retrofit.create(ScoreCardService::class.java)
     }
 }

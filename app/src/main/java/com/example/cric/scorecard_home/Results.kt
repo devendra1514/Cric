@@ -1,3 +1,3 @@
 package com.example.cric.scorecard_home
 
-class Results(val fixture: Fixture, live_details: LiveDetails)
+data class Results(val fixture: Fixture, val live_details: LiveDetails)
